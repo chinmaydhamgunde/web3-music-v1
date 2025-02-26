@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Spotify Web3 Music Streaming
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A decentralized music streaming platform powered by Web3 technology using **Web3.js** and **React.js**, deployed on the **Sepolia network**.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Decentralized music streaming
+- Web3 integration for wallet connection (e.g., MetaMask)
+- Users can listen to music stored on a decentralized network
+- Built using React.js for the frontend and Web3.js for blockchain interactions
+- Deployed on the Sepolia test network for testing and development
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js
+- **Blockchain**: Web3.js
+- **Smart Contract**: Ethereum-based contract deployed on Sepolia network
+- **Wallet Integration**: MetaMask for Web3 authentication
+- **Deployment**: Sepolia Ethereum test network
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before running the project locally, ensure you have the following installed:
 
-### `npm run build`
+- Node.js (LTS version recommended)
+- npm or yarn
+- MetaMask (or another Ethereum wallet) for interacting with Web3
+- An Ethereum account with Sepolia test ETH for interacting with the smart contract
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/chinmaydhamgunde/web3-music-v1.git
+    cd web3-music-v1
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+    ```bash
+    npm install
+    # OR
+    yarn install
+    ```
 
-### `npm run eject`
+### Setting Up Web3
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Install and set up MetaMask in your browser (if not already done).
+2. Add Sepolia test network to MetaMask:
+    - Network Name: Sepolia Test Network
+    - New RPC URL: `https://rpc.sepolia.org`
+    - Chain ID: `11155111`
+    - Currency Symbol: `ETH`
+    - Block Explorer URL: `https://sepolia.etherscan.io/`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Get Sepolia ETH from a faucet for testing (if needed): 
+    - Visit [Sepolia Faucet](https://faucet.sepolia.org/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Start the React development server:
+    ```bash
+    npm start
+    # OR
+    yarn start
+    ```
 
-## Learn More
+2. Open your browser and navigate to `http://localhost:3000` to interact with the platform.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Connecting to MetaMask
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- When you first load the app, you'll be prompted to connect your MetaMask wallet.
+- Ensure that your wallet is connected to the Sepolia test network.
+- Once connected, you will be able to interact with the Web3 features of the platform, such as listening to songs and interacting with the smart contract.
